@@ -10,16 +10,16 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "elflord_fix"
+let g:colors_name = "javascript_color"
 hi Normal		ctermfg=cyan guifg=cyan			guibg=black
-hi Comment	term=bold		ctermfg=Green		guifg=#80a0ff
+hi Comment	term=bold		ctermfg=green		guifg=#80a0ff
 hi Constant	term=underline	ctermfg=Magenta		guifg=Magenta
 hi Special	term=bold		ctermfg=Red	guifg=Red
-hi Identifier term=underline	cterm=bold			ctermfg=green guifg=#40ffff
+hi Identifier term=underline	cterm=bold			ctermfg=green  guifg=#40ffff
 hi Statement term=bold		ctermfg=Yellow gui=bold	guifg=#aa4444
 hi PreProc	term=underline	ctermfg=Blue	guifg=#ff80ff
 hi Type	term=underline		ctermfg=Green	guifg=#60ff60 gui=bold
-hi Function	term=bold		ctermfg=Green guifg=White
+hi Function	term=bold		ctermfg=red guifg=White
 hi Repeat	term=underline	ctermfg=yellow		guifg=white
 hi Operator				ctermfg=yellow			guifg=Red
 hi Ignore				ctermfg=black		guifg=bg
