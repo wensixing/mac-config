@@ -22,3 +22,5 @@ set nobackup
 set list
 au BufRead,BufNewFile *.js colo javascript_color
 au BufRead,BufNewFile *.js set syntax=javascript
+execute pathogen#infect()
+filetype plugin indent on
