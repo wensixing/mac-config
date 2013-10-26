@@ -22,5 +22,24 @@ set nobackup
 set list
 au BufRead,BufNewFile *.js colo javascript_color
 au BufRead,BufNewFile *.js set syntax=javascript
+
+" pathogen
 execute pathogen#infect()
 filetype plugin indent on
+
+" F2 - 行号
+nnoremap <F2> :set nonumber!<CR>
+nnoremap <F1> :set nolist!<CR>
+
+" 补全
+set completeopt+=longest
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
+inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+" python
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_menu_height = 20
+nnoremap <F10> :!python<CR>

@@ -1,3 +1,9 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/pydiction"]
+	path = .vim/bundle/pydiction
+	url = git@github.com:rkulla/pydiction.git
+[submodule ".vim/bundle/pyflakes-vim"]
+	path = .vim/bundle/pyflakes-vim
+	url = git@github.com:kevinw/pyflakes-vim.git
