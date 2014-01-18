@@ -95,3 +95,4 @@ export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 bindkey -e
 PATH=$PATH:~/node_modules/coffee-script/bin
+export PATH=/usr/local/bin:$PATH
