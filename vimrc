@@ -31,7 +31,7 @@ filetype plugin indent on
 nnoremap <F2> :set nonumber!<CR>
 nnoremap <F1> :set nolist!<CR>
 
-" 补全
+" 补全 Ctrl+R
 set completeopt+=longest
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
@@ -42,4 +42,5 @@ inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 " python
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
+let g:pymode_indent = 0
 nnoremap <F10> :!python<CR>
